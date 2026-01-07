@@ -1,10 +1,8 @@
-version: 2
+version: 2                          # 1. The Version
 
-sources:
-  - name: austin_311
-    database: bigquery-public-data
-    schema: austin_311
-    tables:
-      - name: 311_service_requests
-        description: "Raw data from Austin 311 calls"
-        loaded_at_field: created_date
+sources:                            # 2. The "Parent" Key
+  - name: austin_311                # 3. The Source (List Item 1)
+    database: bigquery-public-data  #    Property of Source 1
+    schema: austin_311              #    Property of Source 1
+    tables:                         # 4. The "Child" Key
+      - name: 311_service_requests  # 5. The Table (List Item 1)
