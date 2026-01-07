@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: austin_311
+    database: bigquery-public-data
+    schema: austin_311
+    tables:
+      - name: 311_service_requests
+        description: "Raw data from Austin 311 calls"
+        loaded_at_field: created_date
